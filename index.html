@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Topografie oefenen</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="Oefenspellen voor topografie: landen in Azië, Nederlandse waterwerken en de staten van de VS.">
+<link rel="icon" href="data:,">
+<meta name="theme-color" content="#2f7f7a">
+<style>
+:root{--bg:#F3F7F6;--ink:#17312E;--muted:#4F6662;--teal:#2F7F7A;--card:#fff;--line:#D7E5E2}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:1.05rem/1.55 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+.wrap{max-width:62rem;margin:0 auto;padding:2.5rem 1rem 3rem}
+@media (min-width:48rem){.wrap{padding:3.5rem 2rem 4rem}}
+h1{margin:0;font-size:clamp(2.2rem,7vw,3.4rem);line-height:1.05;letter-spacing:-.02em}
+h1 span{color:var(--teal)}
+.lead{margin:.9rem 0 2rem;color:var(--muted);max-width:32rem}
+.games{list-style:none;margin:0;padding:0;display:grid;gap:1.1rem}
+@media (min-width:44rem){.games{grid-template-columns:repeat(3,1fr)}}
+.game{position:relative;display:flex;flex-direction:column;height:100%;background:var(--card);border:2px solid var(--line);border-radius:22px;overflow:hidden;transition:transform .25s ease,border-color .25s,box-shadow .25s}
+.game:hover{transform:translateY(-4px) rotate(-.4deg);border-color:var(--teal);box-shadow:0 18px 30px -20px rgba(23,49,46,.5)}
+.game:nth-child(2):hover{transform:translateY(-4px) rotate(.4deg)}
+.thumb{aspect-ratio:16/10;overflow:hidden;background:#E3EEEC}
+.thumb img{width:100%;height:100%;object-fit:cover;object-position:50% 20%;display:block}
+.body{padding:1rem 1.15rem 1.25rem;display:flex;flex-direction:column;flex:1}
+h2{margin:0;font-size:1.3rem;line-height:1.2}
+h2 a{color:inherit;text-decoration:none}
+h2 a::after{content:"";position:absolute;inset:0}
+.game:has(a:focus-visible){outline:4px solid #F2B84B;outline-offset:3px}
+h2 a:focus-visible{outline:none}
+.body p{margin:.4rem 0 0;color:var(--muted);font-size:.95rem}
+.go{margin-top:auto;padding-top:1rem}
+.go span{display:inline-flex;align-items:center;gap:.4rem;min-height:44px;padding:.55rem 1.1rem;border-radius:999px;background:var(--teal);color:#fff;font-weight:700}
+.tip{margin:2.25rem 0 0;font-size:.9rem;color:var(--muted)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <h1>Topografie <span>oefenen</span></h1>
+  <p class="lead">Kies een spel, vul je naam in en oefen met klikken of typen op de kaart.</p>
+  <ul class="games">
+    <li class="game">
+      <div class="thumb"><img src="img/azie.jpg" width="699" height="430" alt="Kaart van Azië met genummerde landen."></div>
+      <div class="body">
+        <h2><a href="azie-landen-spel/">Landen in en rondom Azië</a></h2>
+        <p>Oefen de landen van Azië per regio.</p>
+        <div class="go" aria-hidden="true"><span>Spelen →</span></div>
+      </div>
+    </li>
+    <li class="game">
+      <div class="thumb"><img src="img/water.jpg" width="699" height="433" alt="Kaart van Nederland met waterwerken en rivieren."></div>
+      <div class="body">
+        <h2><a href="nl-waterwerken-spel/">Nederlandse waterwerken</a></h2>
+        <p>Zuiderzeewerken, Deltawerken, rivieren en landschappen.</p>
+        <div class="go" aria-hidden="true"><span>Spelen →</span></div>
+      </div>
+    </li>
+    <li class="game">
+      <div class="thumb"><img src="img/vs.jpg" width="699" height="433" alt="Kaart van de Verenigde Staten met afkortingen van de staten."></div>
+      <div class="body">
+        <h2><a href="vs-staten-spel/">VS staten oefenen</a></h2>
+        <p>De 48 staten, in sets van 10.</p>
+        <div class="go" aria-hidden="true"><span>Spelen →</span></div>
+      </div>
+    </li>
+  </ul>
+  <p class="tip">Tip: op een telefoon of tablet kun je een spel via het menu van de browser op het beginscherm zetten.</p>
+</main>
+</body>
+</html>
